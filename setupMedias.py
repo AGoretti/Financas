@@ -211,6 +211,9 @@ teste=['abcb4.SA',
 'wege3.SA',
 'wizs3.SA']
 
+teste2 = ['abcb4.SA',
+'tiet11.SA']
+
 
 df2=pd.DataFrame()
 df2['ACAO']='teste'
@@ -226,7 +229,7 @@ def trendline(index,data, order=1):
 
 
 
-for ticks in teste:
+for ticks in teste2:
     Acao=ticks
     Periodo='2019-07-01'
     PG = wb.DataReader(Acao,data_source="yahoo",start=Periodo)
@@ -283,17 +286,32 @@ for ticks in teste:
     del df['Low']
     del df['Open']
 
+
+
     ax = plt.gca()
     df.plot(kind='line',y='Normal 8', color='black', ax=ax,title=Acao)
     df.plot(kind='line',y='Normal 20', color='brown', ax=ax)
     df.plot(kind='line',y='Normal 3', color='green', ax=ax)
-    #plt.show()
+    plt.show()
     
     ax = plt.gca()
-    #df.plot(kind='line',y='Adj Close', color='black', ax=ax, title=Acao)
+    df.plot(kind='line',y='Adj Close', color='black', ax=ax, title=Acao)
 
 
-    #plt.show()
+    plt.show()
+    
+    i = 0
+    j = 0
+    print(df.index[0])
 
 
+    for index, row in df.iterrows():
+        if row['Normal 20'] < 0.005 and row['Normal 20'] > -0.005:
+            if row['Normal 3'] < 0.005 and row['Normal 3'] > -0.005:
+                print(row['Normal 20'])
+                print(row['Normal 3'])
+                print(index)
 
+       
+
+    print('---------')   
