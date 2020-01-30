@@ -1,4 +1,13 @@
 
+import pandas as pd
+import numpy as np
+from pandas_datareader import data as wb
+import seaborn as sns
+import datetime
+from datetime import datetime
+import time
+import matplotlib.pyplot as plt
+#%matplotlib inline
 teste=['abcb4.SA',
 'tiet11.SA',
 'aalr3.SA',
@@ -201,15 +210,6 @@ teste=['abcb4.SA',
 'vulc3.SA',
 'wege3.SA',
 'wizs3.SA']
-import pandas as pd
-import numpy as np
-from pandas_datareader import data as wb
-import seaborn as sns
-import datetime
-from datetime import datetime
-import time
-import matplotlib.pyplot as plt
-%matplotlib inline
 
 
 df2=pd.DataFrame()
@@ -232,6 +232,11 @@ for ticks in teste:
     PG = wb.DataReader(Acao,data_source="yahoo",start=Periodo)
     df=pd.DataFrame(PG)
     rsi_period=14
+    chg=df['Adj Close'].diff(1)
+    gain=chg.mask(chg<0,0)
+    loss=chg.mask(chg>0,0)
+    avg_gain=gain.ewm(com=rsi_period-1, min_periods=rsi_period).mean()
+    avg_loss=loss.ewm(com=rsi_period-1, min_periods=rsi_period).mean()
     rs=abs(avg_gain/avg_loss)
     rsi=100-(100/(1+rs))
     df['RSI']=rsi
@@ -273,24 +278,22 @@ for ticks in teste:
     df['Normal 3']=(df['MA 3']/df['MA 8'])-1
     df['Normal 8']=(df['MA 8']/df['MA 8'])-1
 
+    del df['High']
+    del df['Close']
+    del df['Low']
+    del df['Open']
 
     ax = plt.gca()
     df.plot(kind='line',y='Normal 8', color='black', ax=ax,title=Acao)
     df.plot(kind='line',y='Normal 20', color='brown', ax=ax)
     df.plot(kind='line',y='Normal 3', color='green', ax=ax)
-    plt.show()
+    #plt.show()
     
     ax = plt.gca()
-    df.plot(kind='line',y='Adj Close', color='black', ax=
-ax, title=Acao)
+    #df.plot(kind='line',y='Adj Close', color='black', ax=ax, title=Acao)
 
 
-    plt.show()
-
+    #plt.show()
 
 
 
-    del df['High']
-    del df['Close']
-    del df['Low']
-    del df['Open']

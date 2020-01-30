@@ -20,7 +20,7 @@ teste=['ABEV3.SA',
 'BBSE3.SA',
 'BRAP4.SA',
 'BRDT3.SA',
-'BRFS3.SA',
+'BRFS3.SA', 
 'BRKM5.SA',
 'BRML3.SA',
 'BTOW3.SA',
@@ -78,7 +78,7 @@ teste=['ABEV3.SA',
 
 
 
-%matplotlib inline
+#%matplotlib inline
 
 cf.go_offline()
 
@@ -168,6 +168,9 @@ returns_acao = returns_acao.iloc[1:]
 
 
 print (Acao)
+#print (df)
+df.plot(kind='line')
+plt.show()
 for index, row in df.iterrows():
     
     if row['Close']>row['MA150'] and row['Close']>row['MA200']:
