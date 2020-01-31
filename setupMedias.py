@@ -7,6 +7,8 @@ import datetime
 from datetime import datetime
 import time
 import matplotlib.pyplot as plt
+import requests
+
 #%matplotlib inline
 teste=['abcb4.SA',
 'tiet11.SA',
@@ -227,6 +229,17 @@ def trendline(index,data, order=1):
     return float(slope)
 
 
+def telegram_bot_sendtext(bot_message):
+    
+    bot_token = '1036535853:AAHnPwy5CFEf4ZBjOaKlwY-Fz0uzL3xumFQ'
+    bot_chatID = '-345867079'
+    send_text = 'https://api.telegram.org/bot' + bot_token + '/sendMessage?chat_id=' + bot_chatID + '&parse_mode=Markdown&text=' + bot_message
+
+
+    response = requests.get(send_text)
+
+
+    return response.json()
 
 
 for ticks in teste2:
@@ -288,30 +301,32 @@ for ticks in teste2:
 
 
 
-    ax = plt.gca()
-    df.plot(kind='line',y='Normal 8', color='black', ax=ax,title=Acao)
-    df.plot(kind='line',y='Normal 20', color='brown', ax=ax)
-    df.plot(kind='line',y='Normal 3', color='green', ax=ax)
-    plt.show()
+    #ax = plt.gca()
+    #df.plot(kind='line',y='Normal 8', color='black', ax=ax,title=Acao)
+    #df.plot(kind='line',y='Normal 20', color='brown', ax=ax)
+    #df.plot(kind='line',y='Normal 3', color='green', ax=ax)
+    #plt.show()
     
-    ax = plt.gca()
-    df.plot(kind='line',y='Adj Close', color='black', ax=ax, title=Acao)
+    #ax = plt.gca()
+    #df.plot(kind='line',y='Adj Close', color='black', ax=ax, title=Acao)
 
 
-    plt.show()
+    #plt.show()
     
-    i = 0
-    j = 0
-    print(df.index[0])
+    nome = False
 
 
     for index, row in df.iterrows():
         if row['Normal 20'] < 0.005 and row['Normal 20'] > -0.005:
             if row['Normal 3'] < 0.005 and row['Normal 3'] > -0.005:
-                print(row['Normal 20'])
-                print(row['Normal 3'])
+                if nome == False:
+                    telegram_bot_sendtext(ticks)
+                    nome = True
+                telegram_bot_sendtext(str(index))
                 print(index)
+    if nome == True:
+        telegram_bot_sendtext("--------")
+                    
 
-       
 
-    print('---------')   
+     
