@@ -1,4 +1,3 @@
-
 import pandas as pd
 import numpy as np
 from pandas_datareader import data as wb
@@ -216,20 +215,6 @@ teste=['abcb4.SA',
 teste2 = ['abcb4.SA',
 'tiet11.SA']
 
-
-df2=pd.DataFrame()
-df2['ACAO']='teste'
-df2['RS']='teste'
-
-
-
-def trendline(index,data, order=1):
-    coeffs = np.polyfit(index, data, order)
-    #print (coeffs)
-    slope = coeffs[-2]
-    return float(slope)
-
-
 def telegram_bot_sendtext(bot_message):
     
     bot_token = '1036535853:AAHnPwy5CFEf4ZBjOaKlwY-Fz0uzL3xumFQ'
@@ -242,8 +227,7 @@ def telegram_bot_sendtext(bot_message):
 
     return response.json()
 
-telegram_bot_sendtext('Diário')
-
+telegram_bot_sendtext('Semanal')
 
 for ticks in teste2:
     Acao=ticks
@@ -259,9 +243,18 @@ for ticks in teste2:
     rs=abs(avg_gain/avg_loss)
     rsi=100-(100/(1+rs))
     df['RSI']=rsi
-    
 
-#Separando Close para as Médias e criando as médias
+
+    listofwdays = []
+    for index, row in df.iterrows():
+        x = index.weekday()
+        listofwdays.append(x)
+    df['Dayofweek'] = listofwdays
+    sextas = df[df['Dayofweek'] != 4].index
+    df.drop(sextas, inplace = True)
+    print(df['Dayofweek'])
+
+    #Separando Close para as Médias e criando as médias
     close=df[['Adj Close']]
 
 
@@ -330,7 +323,3 @@ for ticks in teste2:
                 print(index)
     if nome == True:
         telegram_bot_sendtext("--------")
-                    
-
-
-     
