@@ -231,8 +231,8 @@ telegram_bot_sendtext('Semanal')
 
 for ticks in teste:
     Acao=ticks
-    Periodo='2019-07-01'
-    PG = wb.DataReader(Acao,data_source="yahoo",start=Periodo)
+    PeriodoStart='2019-07-01'
+    PG = wb.DataReader(Acao,data_source="yahoo",start=PeriodoStart)
     df=pd.DataFrame(PG)
     rsi_period=14
     chg=df['Adj Close'].diff(1)
