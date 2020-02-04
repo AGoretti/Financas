@@ -229,7 +229,7 @@ def telegram_bot_sendtext(bot_message):
 
 telegram_bot_sendtext('Semanal')
 
-for ticks in teste2:
+for ticks in teste:
     Acao=ticks
     Periodo='2019-07-01'
     PG = wb.DataReader(Acao,data_source="yahoo",start=Periodo)
@@ -245,14 +245,23 @@ for ticks in teste2:
     df['RSI']=rsi
 
 
+    #definindo semanal
     listofwdays = []
     for index, row in df.iterrows():
         x = index.weekday()
         listofwdays.append(x)
+
+    for i, j in enumerate(listofwdays[:-1]):
+        if j == 3 and listofwdays[i+1] == 0:
+            #print ('Entrou')
+            listofwdays[i] = 4
+        
+    #print(listofwdays) 
+
     df['Dayofweek'] = listofwdays
-    sextas = df[df['Dayofweek'] != 4].index
-    df.drop(sextas, inplace = True)
-    print(df['Dayofweek'])
+    naoSextas = df[df['Dayofweek'] != 4].index
+    df.drop(naoSextas, inplace = True)
+    #print(df['Dayofweek'])
 
     #Separando Close para as Médias e criando as médias
     close=df[['Adj Close']]
@@ -320,6 +329,8 @@ for ticks in teste2:
                     telegram_bot_sendtext(ticks)
                     nome = True
                 telegram_bot_sendtext(str(index))
-                print(index)
+                #print(index)
     if nome == True:
         telegram_bot_sendtext("--------")
+
+telegram_bot_sendtext("............")

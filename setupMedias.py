@@ -245,7 +245,7 @@ def telegram_bot_sendtext(bot_message):
 telegram_bot_sendtext('Diário')
 
 
-for ticks in teste2:
+for ticks in teste:
     Acao=ticks
     Periodo='2019-07-01'
     PG = wb.DataReader(Acao,data_source="yahoo",start=Periodo)
@@ -332,5 +332,4 @@ for ticks in teste2:
         telegram_bot_sendtext("--------")
                     
 
-
-     
+telegram_bot_sendtext("............")
