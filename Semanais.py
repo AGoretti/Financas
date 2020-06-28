@@ -307,17 +307,17 @@ for ticks in teste:
 
 
 
-    #ax = plt.gca()
-    #df.plot(kind='line',y='Normal 8', color='black', ax=ax,title=Acao)
-    #df.plot(kind='line',y='Normal 20', color='brown', ax=ax)
-    #df.plot(kind='line',y='Normal 3', color='green', ax=ax)
-    #plt.show()
+    ax = plt.gca()
+    df.plot(kind='line',y='Normal 8', color='black', ax=ax,title=Acao)
+    df.plot(kind='line',y='Normal 20', color='brown', ax=ax)
+    df.plot(kind='line',y='Normal 3', color='green', ax=ax)
+    plt.show()
     
-    #ax = plt.gca()
-    #df.plot(kind='line',y='Adj Close', color='black', ax=ax, title=Acao)
+    ax = plt.gca()
+    df.plot(kind='line',y='Adj Close', color='black', ax=ax, title=Acao)
 
 
-    #plt.show()
+    plt.show()
     
     nome = False
 

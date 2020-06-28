@@ -1,0 +1,199 @@
+1589312944579	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiler3CIL4"
+1589312945944	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1589312947573	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1589312947573	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1589312947574	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1589312947574	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1589312951319	Marionette	INFO	Listening on port 42873
+1589312951403	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.rad.cvm.gov.br/ENETCONSULTA/js/jquery-1.3.2.min.js, line 53: unreachable code after return statement
+JavaScript error: https://www.rad.cvm.gov.br/ENETCONSULTA/frmDemonstracaoFinanceiraITR.aspx?Informacao=2&Demonstracao=2&Periodo=0&Grupo=DFs+Consolidadas&Quadro=Balan%c3%a7o+Patrimonial+Ativo&NomeTipoDocumento=ITR&Empresa=JBS&DataReferencia=2019-09-30&Versao=1&CodTipoDocumento=3&NumeroSequencialDocumento=89491&NumeroSequencialRegistroCvm=1503&CodigoTipoInstituicao=2, line 21: ReferenceError: recebeDocumento is not defined
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1589312975936	Marionette	INFO	Stopped listening on port 42873
+1589313034393	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile1Xra5l"
+1589313035089	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1589313036617	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1589313036617	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1589313036617	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1589313036617	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1589313038776	Marionette	INFO	Listening on port 43385
+1589313038813	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.rad.cvm.gov.br/ENETCONSULTA/js/jquery-1.3.2.min.js, line 53: unreachable code after return statement
+JavaScript error: https://www.rad.cvm.gov.br/ENETCONSULTA/frmDemonstracaoFinanceiraITR.aspx?Informacao=2&Demonstracao=2&Periodo=0&Grupo=DFs+Consolidadas&Quadro=Balan%c3%a7o+Patrimonial+Ativo&NomeTipoDocumento=ITR&Empresa=JBS&DataReferencia=2019-09-30&Versao=1&CodTipoDocumento=3&NumeroSequencialDocumento=89491&NumeroSequencialRegistroCvm=1503&CodigoTipoInstituicao=2, line 21: ReferenceError: recebeDocumento is not defined
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 691: TypeError: this.tablesData[table] is undefined
+1589313046152	Marionette	INFO	Stopped listening on port 43385
+1589313048921	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile2UrBgS"
+1589313049552	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1589313051178	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1589313051179	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1589313051179	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1589313051179	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1589313053390	Marionette	INFO	Listening on port 43479
+1589313053438	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.rad.cvm.gov.br/ENETCONSULTA/js/jquery-1.3.2.min.js, line 53: unreachable code after return statement
+JavaScript error: https://www.rad.cvm.gov.br/ENETCONSULTA/frmDemonstracaoFinanceiraITR.aspx?Informacao=2&Demonstracao=2&Periodo=0&Grupo=DFs+Consolidadas&Quadro=Balan%c3%a7o+Patrimonial+Ativo&NomeTipoDocumento=ITR&Empresa=JBS&DataReferencia=2019-09-30&Versao=1&CodTipoDocumento=3&NumeroSequencialDocumento=89491&NumeroSequencialRegistroCvm=1503&CodigoTipoInstituicao=2, line 21: ReferenceError: recebeDocumento is not defined
+1589313072221	Marionette	INFO	Stopped listening on port 43479
+1589314053451	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileZURk6K"
+1589314054092	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1589314055666	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1589314055666	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1589314055666	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1589314055666	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1589314057905	Marionette	INFO	Listening on port 35239
+1589314057971	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.rad.cvm.gov.br/ENETCONSULTA/js/jquery-1.3.2.min.js, line 53: unreachable code after return statement
+JavaScript error: https://www.rad.cvm.gov.br/ENETCONSULTA/frmDemonstracaoFinanceiraITR.aspx?Informacao=2&Demonstracao=2&Periodo=0&Grupo=DFs+Consolidadas&Quadro=Balan%c3%a7o+Patrimonial+Ativo&NomeTipoDocumento=ITR&Empresa=JBS&DataReferencia=2019-09-30&Versao=1&CodTipoDocumento=3&NumeroSequencialDocumento=89491&NumeroSequencialRegistroCvm=1503&CodigoTipoInstituicao=2, line 21: ReferenceError: recebeDocumento is not defined
+1589314068120	Marionette	INFO	Stopped listening on port 35239
+1589314222557	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileevy75l"
+1589314223220	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1589314224682	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1589314224682	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1589314224682	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1589314224682	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1589314226825	Marionette	INFO	Listening on port 44625
+1589314226874	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.rad.cvm.gov.br/ENETCONSULTA/js/jquery-1.3.2.min.js, line 53: unreachable code after return statement
+JavaScript error: https://www.rad.cvm.gov.br/ENETCONSULTA/frmDemonstracaoFinanceiraITR.aspx?Informacao=2&Demonstracao=2&Periodo=0&Grupo=DFs+Consolidadas&Quadro=Balan%c3%a7o+Patrimonial+Ativo&NomeTipoDocumento=ITR&Empresa=JBS&DataReferencia=2019-09-30&Versao=1&CodTipoDocumento=3&NumeroSequencialDocumento=89491&NumeroSequencialRegistroCvm=1503&CodigoTipoInstituicao=2, line 21: ReferenceError: recebeDocumento is not defined
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1589314245026	Marionette	INFO	Stopped listening on port 44625
+1589314731068	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile8bjbnr"
+1589314731717	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1589314733393	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1589314733394	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1589314733394	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1589314733394	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1589314735495	Marionette	INFO	Listening on port 42269
+1589314735592	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.rad.cvm.gov.br/ENETCONSULTA/js/jquery-1.3.2.min.js, line 53: unreachable code after return statement
+JavaScript error: https://www.rad.cvm.gov.br/ENETCONSULTA/frmDemonstracaoFinanceiraITR.aspx?Informacao=2&Demonstracao=2&Periodo=0&Grupo=DFs+Consolidadas&Quadro=Balan%c3%a7o+Patrimonial+Ativo&NomeTipoDocumento=ITR&Empresa=JBS&DataReferencia=2019-09-30&Versao=1&CodTipoDocumento=3&NumeroSequencialDocumento=89491&NumeroSequencialRegistroCvm=1503&CodigoTipoInstituicao=2, line 21: ReferenceError: recebeDocumento is not defined
+1589314767385	Marionette	INFO	Stopped listening on port 42269
+1589314870027	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileAaggv1"
+1589314870623	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1589314872165	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1589314872165	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1589314872166	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1589314872166	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1589314874540	Marionette	INFO	Listening on port 36971
+1589314874644	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.rad.cvm.gov.br/ENETCONSULTA/js/jquery-1.3.2.min.js, line 53: unreachable code after return statement
+JavaScript error: https://www.rad.cvm.gov.br/ENETCONSULTA/frmDemonstracaoFinanceiraITR.aspx?Informacao=2&Demonstracao=2&Periodo=0&Grupo=DFs+Consolidadas&Quadro=Balan%c3%a7o+Patrimonial+Ativo&NomeTipoDocumento=ITR&Empresa=JBS&DataReferencia=2019-09-30&Versao=1&CodTipoDocumento=3&NumeroSequencialDocumento=89491&NumeroSequencialRegistroCvm=1503&CodigoTipoInstituicao=2, line 21: ReferenceError: recebeDocumento is not defined
+1589314905083	Marionette	INFO	Stopped listening on port 36971
+1589315359533	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilerTv2HM"
+1589315360391	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1589315362010	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1589315362010	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1589315362010	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1589315362010	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1589315364134	Marionette	INFO	Listening on port 43967
+1589315364151	Marionette	WARN	TLS certificate errors will be ignored for this session
+1589315385002	Marionette	INFO	Stopped listening on port 43967
+1589315421275	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileiAOGyv"
+1589315421863	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1589315423373	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1589315423373	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1589315423373	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1589315423374	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1589315425561	Marionette	INFO	Listening on port 40047
+1589315425602	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: (new Error("Connection closed before committing the transaction.", "resource://gre/modules/Sqlite.jsm", 681))
+JavaScript error: , line 0: UnknownError: The operation failed for reasons unrelated to the database itself and not covered by any other error code.
+1589315429261	Marionette	INFO	Stopped listening on port 40047
+1589315438297	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileZT3ZZF"
+1589315438910	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1589315440605	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1589315440605	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1589315440605	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1589315440606	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1589315442968	Marionette	INFO	Listening on port 45907
+1589315443013	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.rad.cvm.gov.br/ENETCONSULTA/js/jquery-1.3.2.min.js, line 53: unreachable code after return statement
+JavaScript error: https://www.rad.cvm.gov.br/ENETCONSULTA/frmDemonstracaoFinanceiraITR.aspx?Informacao=2&Demonstracao=2&Periodo=0&Grupo=DFs+Consolidadas&Quadro=Balan%c3%a7o+Patrimonial+Ativo&NomeTipoDocumento=ITR&Empresa=JBS&DataReferencia=2019-09-30&Versao=1&CodTipoDocumento=3&NumeroSequencialDocumento=89491&NumeroSequencialRegistroCvm=1503&CodigoTipoInstituicao=2, line 21: ReferenceError: recebeDocumento is not defined
+JavaScript error: , line 0: UnknownError: The operation failed for reasons unrelated to the database itself and not covered by any other error code.
+1589315491680	Marionette	INFO	Stopped listening on port 45907
+1589315503656	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile93MiQp"
+1589315504291	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1589315505910	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1589315505910	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1589315505910	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1589315505911	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1589315508078	Marionette	INFO	Listening on port 35287
+1589315508181	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.rad.cvm.gov.br/ENETCONSULTA/js/jquery-1.3.2.min.js, line 53: unreachable code after return statement
+JavaScript error: https://www.rad.cvm.gov.br/ENETCONSULTA/frmDemonstracaoFinanceiraITR.aspx?Informacao=2&Demonstracao=2&Periodo=0&Grupo=DFs+Consolidadas&Quadro=Balan%c3%a7o+Patrimonial+Ativo&NomeTipoDocumento=ITR&Empresa=JBS&DataReferencia=2019-09-30&Versao=1&CodTipoDocumento=3&NumeroSequencialDocumento=89491&NumeroSequencialRegistroCvm=1503&CodigoTipoInstituicao=2, line 21: ReferenceError: recebeDocumento is not defined
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 691: TypeError: this.tablesData[table] is undefined
+1589315529898	Marionette	INFO	Stopped listening on port 35287
+1589316825146	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileNvlUb9"
+1589316825799	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1589316827348	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1589316827348	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1589316827349	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1589316827349	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1589316829493	Marionette	INFO	Listening on port 34333
+1589316829571	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.rad.cvm.gov.br/ENETCONSULTA/js/jquery-1.3.2.min.js, line 53: unreachable code after return statement
+JavaScript error: https://www.rad.cvm.gov.br/ENETCONSULTA/frmDemonstracaoFinanceiraITR.aspx?Informacao=2&Demonstracao=2&Periodo=0&Grupo=DFs+Consolidadas&Quadro=Balan%c3%a7o+Patrimonial+Ativo&NomeTipoDocumento=ITR&Empresa=JBS&DataReferencia=2019-09-30&Versao=1&CodTipoDocumento=3&NumeroSequencialDocumento=89491&NumeroSequencialRegistroCvm=1503&CodigoTipoInstituicao=2, line 21: ReferenceError: recebeDocumento is not defined
+1589316846684	Marionette	INFO	Stopped listening on port 34333
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1589316849776	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile5dlTNy"
+1589316850374	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1589316851871	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1589316851871	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1589316851871	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1589316851871	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1589316854133	Marionette	INFO	Listening on port 45071
+1589316854191	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.rad.cvm.gov.br/ENETCONSULTA/js/jquery-1.3.2.min.js, line 53: unreachable code after return statement
+1589316950770	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileQO74VC"
+1589316951427	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1589316952988	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1589316952988	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1589316952988	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1589316952988	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1589316955331	Marionette	INFO	Listening on port 38589
+1589316955386	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.rad.cvm.gov.br/ENETCONSULTA/js/jquery-1.3.2.min.js, line 53: unreachable code after return statement
+JavaScript error: https://www.rad.cvm.gov.br/ENETCONSULTA/frmDemonstracaoFinanceiraITR.aspx?Informacao=2&Demonstracao=2&Periodo=0&Grupo=DFs+Consolidadas&Quadro=Balan%c3%a7o+Patrimonial+Ativo&NomeTipoDocumento=ITR&Empresa=JBS&DataReferencia=2019-09-30&Versao=1&CodTipoDocumento=3&NumeroSequencialDocumento=89491&NumeroSequencialRegistroCvm=1503&CodigoTipoInstituicao=2, line 21: ReferenceError: recebeDocumento is not defined
+JavaScript error: https://www.rad.cvm.gov.br/ENETCONSULTA/frmDemonstracaoFinanceiraITR.aspx?Informacao=2&Demonstracao=2&Periodo=0&Grupo=DFs+Consolidadas&Quadro=Balan%c3%a7o+Patrimonial+Ativo&NomeTipoDocumento=ITR&Empresa=JBS&DataReferencia=2019-09-30&Versao=1&CodTipoDocumento=3&NumeroSequencialDocumento=89491&NumeroSequencialRegistroCvm=1503&CodigoTipoInstituicao=2, line 21: ReferenceError: recebeDocumento is not defined
+JavaScript error: , line 0: UnknownError: The operation failed for reasons unrelated to the database itself and not covered by any other error code.
+1589316982334	Marionette	INFO	Stopped listening on port 45071
+1589316982778	Marionette	INFO	Stopped listening on port 38589
+1589317274510	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileaEdu4U"
+1589317275159	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1589317276766	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1589317276766	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1589317276766	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1589317276766	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1589317278945	Marionette	INFO	Listening on port 44213
+1589317279027	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.rad.cvm.gov.br/ENETCONSULTA/js/jquery-1.3.2.min.js, line 53: unreachable code after return statement
+JavaScript error: https://www.rad.cvm.gov.br/ENETCONSULTA/frmDemonstracaoFinanceiraITR.aspx?Informacao=2&Demonstracao=2&Periodo=0&Grupo=DFs+Consolidadas&Quadro=Balan%c3%a7o+Patrimonial+Ativo&NomeTipoDocumento=ITR&Empresa=JBS&DataReferencia=2019-09-30&Versao=1&CodTipoDocumento=3&NumeroSequencialDocumento=89491&NumeroSequencialRegistroCvm=1503&CodigoTipoInstituicao=2, line 21: ReferenceError: recebeDocumento is not defined
+JavaScript error: , line 0: UnknownError: The operation failed for reasons unrelated to the database itself and not covered by any other error code.
+1589317497804	Marionette	INFO	Stopped listening on port 44213
+1589317501210	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileA8Cnxs"
+1589317501849	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1589317503270	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1589317503270	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1589317503271	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1589317503271	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1589317505416	Marionette	INFO	Listening on port 43015
+1589317505436	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.rad.cvm.gov.br/ENETCONSULTA/js/jquery-1.3.2.min.js, line 53: unreachable code after return statement
+JavaScript error: https://www.rad.cvm.gov.br/ENETCONSULTA/frmDemonstracaoFinanceiraITR.aspx?Informacao=2&Demonstracao=2&Periodo=0&Grupo=DFs+Consolidadas&Quadro=Balan%c3%a7o+Patrimonial+Ativo&NomeTipoDocumento=ITR&Empresa=JBS&DataReferencia=2019-09-30&Versao=1&CodTipoDocumento=3&NumeroSequencialDocumento=89491&NumeroSequencialRegistroCvm=1503&CodigoTipoInstituicao=2, line 21: ReferenceError: recebeDocumento is not defined
+1589317540577	Marionette	INFO	Stopped listening on port 43015
+1589318267896	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileA7SPj1"
+1589318268538	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1589318270170	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1589318270170	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1589318270171	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1589318270171	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1589318272398	Marionette	INFO	Listening on port 33411
+1589318272415	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.rad.cvm.gov.br/ENETCONSULTA/js/jquery-1.3.2.min.js, line 53: unreachable code after return statement
+JavaScript error: https://www.rad.cvm.gov.br/ENETCONSULTA/frmDemonstracaoFinanceiraITR.aspx?Informacao=2&Demonstracao=2&Periodo=0&Grupo=DFs+Consolidadas&Quadro=Balan%c3%a7o+Patrimonial+Ativo&NomeTipoDocumento=ITR&Empresa=JBS&DataReferencia=2019-09-30&Versao=1&CodTipoDocumento=3&NumeroSequencialDocumento=89491&NumeroSequencialRegistroCvm=1503&CodigoTipoInstituicao=2, line 21: ReferenceError: recebeDocumento is not defined
+1589318292882	Marionette	INFO	Stopped listening on port 33411
