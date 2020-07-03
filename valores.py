@@ -245,42 +245,26 @@ ticks = ['AALR3',
          'YDUQ3'
          ]
 
-
 ticks2 = ['AALR3']
-
 
 select = False
 
-
 nomes = []
 
-
 ebit = False
-
-
-with open('valoresF.csv', 'w', newline='') as file:
-    writer = csv.writer(file)
-    file.close()
-
-with open('valores.csv', 'w', newline='') as file:
-    writer = csv.writer(file)
-    file.close()
-
-with open('ValoresFinal.csv', 'w', newline='') as file:
-    writer = csv.writer(file)
-    file.close()
-
 
 header = {
     "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36",
     "X-Requested-With": "XMLHttpRequest"
 }
 
-
 cabeca = 'Tick', 'Cotacao', 'Setor', 'Vol. Med', 'Valor Mercado', 'Valor Firma', 'N.acoes', 'P/L', 'LPA', 'P/VP', 'VPA',  'P/EBIT', 'Marg. Bruta',  'PSR', 'Marg. EBIT', 'Marg. Líquida', 'ROIC', 'Div. Yield', 'ROE',  'EV / EBITDA', 'EV / EBIT', 'Cres. Rec (5a)', 'Ativo', 'Dív. Bruta', 'Disponibilidades', 'Dív. Líquida', 'Ativo Circulante', 'Patrim. Líq', 'Receita Líquida 12', 'Receita Líquida 3',  'Ebit 12', 'Ebit 3', 'Lucro Líquido 12', 'Lucro Líquido 3'
 
-
 cabecaF = 'Tick', 'Cotacao', 'Setor', 'Vol. Med', 'Valor Mercado', 'Valor Firma', 'N.acoes', 'P/L', 'LPA', 'P/VP', 'VPA',  'P/EBIT', 'Marg. Bruta',  'PSR', 'Marg. EBIT', 'Marg. Líquida', 'ROIC', 'Div. Yield', 'ROE',  'EV / EBITDA', 'EV / EBIT', 'Cres. Rec (5a)', 'Ativo', 'Patrim. Líq', 'Lucro Líquido 12', 'Lucro Líquido 3'
+
+
+def hasNumbers(inputString):
+    return any(char.isdigit() for char in inputString)
 
 
 with open('valores.csv', 'w', newline='') as file:
@@ -291,7 +275,6 @@ with open('valores.csv', 'w', newline='') as file:
 with open('valoresF.csv', 'w', newline='') as file:
     writer = csv.writer(file)
     writer.writerow(cabecaF)
-
 
 for tick in ticks:
 
@@ -337,7 +320,16 @@ for tick in ticks:
             temp = td.text
             if temp.startswith('\n'):
                 temp = temp[-5:]
-            ticksValores.append(temp)
+            temp = temp.replace('.', '')
+            temp = temp.replace(',', '.')
+            temp = temp.replace('%', '')
+            temp = temp.replace('-', '')
+            temp = temp.replace(' ', '')
+            if hasNumbers(temp) == True:
+                tempF = float(temp)
+                ticksValores.append(tempF)
+            else:
+                ticksValores.append(temp)
 
         if 'Cotação' in td.text:
             select = True
@@ -417,30 +409,8 @@ for tick in ticks:
         pass
 
 
-df1 = pd.read_csv('valores.csv', encoding='latin1')
-df2 = pd.read_csv('valoresF.csv', encoding='latin1')
+df1 = pd.read_csv('valores.csv')
+df2 = pd.read_csv('valoresF.csv')
 frames = [df1, df2]
 result = pd.concat(frames)
-for coluna in result.columns:
-    result[coluna] = result[coluna].str.replace('-', '')
-    result[coluna] = result[coluna].str.replace('    ', '')
-
-
-for coluna in ['Vol. Med', 'Valor Mercado', 'Valor Firma', 'N.acoes', 'Ativo', 'Dív. Bruta', 'Disponibilidades', 'Dív. Líquida', 'Ativo Circulante', 'Patrim. Líq', 'Receita Líquida 12', 'Receita Líquida 3',  'Ebit 12', 'Ebit 3', 'Lucro Líquido 12', 'Lucro Líquido 3']:
-
-    result[coluna] = result[coluna].str.replace('.', '')
-
-
-for coluna in ['Marg. Bruta', 'Marg. EBIT', 'Marg. Líquida', 'ROIC', 'Div. Yield', 'ROE', 'Cotacao', 'P/L', 'VPA', 'P/VP', 'PSR']:
-    result[coluna] = result[coluna].str.replace(',', '.')
-
-    result[coluna] = result[coluna].str.rstrip('%')
-for coluna in ['P/EBIT', 'EV / EBITDA', 'EV / EBIT']:
-    result[coluna] = result[coluna].str.replace(',', '.')
-
 result.to_csv('ValoresFinal.csv')
-for coluna in result.columns:
-    try:
-        result2[coluna] = pd.to_numeric(result[coluna])
-    except:
-        continue
